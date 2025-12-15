@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 
 const coreSans = localFont({
   src: [
@@ -42,8 +44,16 @@ const silkaMono = localFont({
 
 export const metadata: Metadata = {
   title: "RASCAL — Move fast. Burn rules.",
-  description: "Surfear la ciudad. La bicicleta eléctrica que rompe las reglas.",
-  keywords: ["bicicleta eléctrica", "e-bike", "Medellín", "movilidad urbana"],
+  description: "Surfear la ciudad. La bicicleta eléctrica que rompe las reglas. No vendemos movilidad, vendemos libertad.",
+  keywords: ["bicicleta eléctrica", "e-bike", "Medellín", "movilidad urbana", "RASCAL", "bicicleta eléctrica Medellín"],
+  authors: [{ name: "RASCAL E-BIKE" }],
+  openGraph: {
+    title: "RASCAL — Move fast. Burn rules.",
+    description: "Surfear la ciudad. La bicicleta eléctrica que rompe las reglas.",
+    type: "website",
+    locale: "es_CO",
+    siteName: "RASCAL",
+  },
 };
 
 export default function RootLayout({
@@ -56,7 +66,9 @@ export default function RootLayout({
       <body
         className={`${coreSans.variable} ${silkaMono.variable} antialiased`}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
