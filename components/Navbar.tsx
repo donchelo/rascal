@@ -27,7 +27,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center group relative">
             <div className="absolute -inset-2 border border-dashed border-transparent group-hover:border-rascal-black/20 transition-all duration-300"></div>
             <Image
-              src="/images/RASCAL_LOGOTIPO_1.png"
+              src="/images/RASCAL_LOGOTIPO_2.png"
               alt="RASCAL"
               width={120}
               height={40}

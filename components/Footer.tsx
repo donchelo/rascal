@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MonoText } from "@/components/ui/MonoText";
 import { Heading } from "@/components/ui/Heading";
 import { StatusBadge } from "@/components/ui/StatusBadge";
@@ -12,9 +13,16 @@ export function Footer() {
             <div className="mb-4">
               <StatusBadge code="RASCAL" label="BRAND" dark />
             </div>
-            <Heading as="h3" size="sm" className="mb-4 text-rascal-cream">
-              RASCAL
-            </Heading>
+            <div className="mb-4">
+              <Image
+                src="/images/RASCAL_LOGOTIPO_3.png"
+                alt="RASCAL"
+                width={180}
+                height={60}
+                className="h-8 md:h-10 w-auto"
+                priority
+              />
+            </div>
             <MonoText className="text-rascal-cream/80">
               ESTD / 20.22
             </MonoText>

@@ -48,12 +48,35 @@ export const metadata: Metadata = {
   description: "Surfear la ciudad. La bicicleta eléctrica que rompe las reglas. No vendemos movilidad, vendemos libertad.",
   keywords: ["bicicleta eléctrica", "e-bike", "Medellín", "movilidad urbana", "RASCAL", "bicicleta eléctrica Medellín"],
   authors: [{ name: "RASCAL E-BIKE" }],
+  icons: {
+    icon: [
+      { url: "/images/RASCAL_SIMBOLO_1.png", sizes: "any" },
+      { url: "/images/RASCAL_SIMBOLO_1.png", type: "image/png" },
+    ],
+    apple: [
+      { url: "/images/RASCAL_SIMBOLO_1.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
   openGraph: {
     title: "RASCAL — Move fast. Burn rules.",
     description: "Surfear la ciudad. La bicicleta eléctrica que rompe las reglas.",
     type: "website",
     locale: "es_CO",
     siteName: "RASCAL",
+    images: [
+      {
+        url: "/images/RASCAL_LOGOTIPO_1.png",
+        width: 1200,
+        height: 630,
+        alt: "RASCAL E-BIKE",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RASCAL — Move fast. Burn rules.",
+    description: "Surfear la ciudad. La bicicleta eléctrica que rompe las reglas.",
+    images: ["/images/RASCAL_LOGOTIPO_1.png"],
   },
 };
 
