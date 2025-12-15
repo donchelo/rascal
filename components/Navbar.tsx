@@ -37,7 +37,7 @@ export function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
-            {["Bikes", "Merch", "Contacto"].map((item) => (
+            {["Bikes", "Merch"].map((item) => (
               <Link
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -49,6 +49,18 @@ export function Navbar() {
                 <span className="absolute inset-0 bg-rascal-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left"></span>
               </Link>
             ))}
+            
+            {/* Contact CTA */}
+            <Link
+              href="#contacto"
+              className="ml-4 px-6 py-2 border-2 border-rascal-red bg-rascal-red text-rascal-cream hover:bg-rascal-cream hover:text-rascal-red hover:border-rascal-red transition-all duration-200 relative group"
+            >
+              <span className="absolute top-0 left-0 w-2 h-2 border-t-2 border-l-2 border-current opacity-0 group-hover:opacity-100 transition-opacity"></span>
+              <span className="absolute bottom-0 right-0 w-2 h-2 border-b-2 border-r-2 border-current opacity-0 group-hover:opacity-100 transition-opacity"></span>
+              <MonoText className="text-xs uppercase tracking-wider relative z-10 font-bold">
+                Contact
+              </MonoText>
+            </Link>
             
             <div className="ml-4 pl-4 border-l-2 border-rascal-black h-8 flex items-center">
                <MonoText size="sm" className="text-rascal-red font-bold">EST. 2022</MonoText>
@@ -73,11 +85,11 @@ export function Navbar() {
         <div
           className={cn(
             "md:hidden overflow-hidden transition-all duration-300 border-t-2 border-rascal-black bg-rascal-cream",
-            isOpen ? "max-h-64" : "max-h-0"
+            isOpen ? "max-h-80" : "max-h-0"
           )}
         >
           <div className="flex flex-col divide-y-2 divide-rascal-black">
-            {["Bikes", "Merch", "Contacto"].map((item) => (
+            {["Bikes", "Merch"].map((item) => (
               <Link
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -88,6 +100,14 @@ export function Navbar() {
                 <span className="font-mono text-xs opacity-0 group-hover:opacity-100">{'->'}</span>
               </Link>
             ))}
+            <Link
+              href="#contacto"
+              onClick={() => setIsOpen(false)}
+              className="px-4 py-3 text-sm font-bold uppercase tracking-wider bg-rascal-red text-rascal-cream flex justify-between group border-2 border-rascal-red"
+            >
+              <span>Contact</span>
+              <span className="font-mono text-xs opacity-0 group-hover:opacity-100">{'->'}</span>
+            </Link>
           </div>
         </div>
       </div>
