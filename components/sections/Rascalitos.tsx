@@ -12,9 +12,9 @@ export function Rascalitos() {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const products = [
-    { title: "Balance Bikes", desc: "Primeros pasos sobre ruedas", image: "balance-bike.jpg" },
-    { title: "Cascos", desc: "Seguridad con estilo multicolor", image: "helmet-kids.jpg" },
-    { title: "Merch Kids", desc: "Ropa y accesorios para pequeños troublemakers", image: "merch-kids.jpg" },
+    { title: "Balance Bikes", desc: "Primer Vuelo. Sin pedales.", image: "balance-bike.jpg" },
+    { title: "Cascos", desc: "Cabeza dura. Estilo firme.", image: "helmet-kids.jpg" },
+    { title: "Merch Kids", desc: "Uniforme de recreo.", image: "merch-kids.jpg" },
   ];
 
   return (
@@ -34,7 +34,7 @@ export function Rascalitos() {
             Rascalitos
           </Heading>
           <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
-            La submarca infantil. Cascos, balance bikes y merchandising para los más pequeños.
+            Mini Troublemakers. Start them young.
           </p>
         </motion.div>
 

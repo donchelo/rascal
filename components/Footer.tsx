@@ -9,7 +9,7 @@ export function Footer() {
           {/* Location */}
           <div>
             <Heading as="h3" size="sm" className="mb-4 text-rascal-cream">
-              Ubicación
+              Base
             </Heading>
             <MonoText className="text-rascal-cream/80">
               Medellín, Colombia
@@ -19,7 +19,7 @@ export function Footer() {
           {/* Contact */}
           <div>
             <Heading as="h3" size="sm" className="mb-4 text-rascal-cream">
-              Contacto
+              Señal
             </Heading>
             <div className="space-y-2">
               <MonoText className="text-rascal-cream/80 block">
@@ -66,9 +66,9 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-rascal-cream/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <MonoText className="text-rascal-cream/60 text-sm">
-              © 2025 RASCAL E-BIKE. Todos los derechos reservados.
-            </MonoText>
+              <MonoText className="text-rascal-cream/60 text-sm">
+                © 2025 RASCAL E-BIKE.
+              </MonoText>
             <MonoText className="text-rascal-cream/60 text-sm mt-4 md:mt-0">
               www.rascal.com
             </MonoText>

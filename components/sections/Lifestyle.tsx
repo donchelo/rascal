@@ -12,10 +12,10 @@ export function Lifestyle() {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const merchItems = [
-    { name: "Hoodies", desc: "Logo script bordado", image: "hoodie.jpg" },
-    { name: "Camisetas", desc: "Isotipo + líneas de velocidad", image: "t-shirt.jpg" },
-    { name: "Gorras", desc: "Two-tone (crema/rojo)", image: "cap.jpg" },
-    { name: "Medias", desc: '"Trouble" / "Maker"', image: "socks.jpg" },
+    { name: "Hoodies", desc: "Script Bordado.", image: "hoodie.jpg" },
+    { name: "Camisetas", desc: "Velocidad Gráfica.", image: "t-shirt.jpg" },
+    { name: "Gorras", desc: "Two-tone. Sin grises.", image: "cap.jpg" },
+    { name: "Medias", desc: "Trouble. Maker.", image: "socks.jpg" },
   ];
 
   return (
@@ -35,7 +35,7 @@ export function Lifestyle() {
             Merch & Lifestyle
           </Heading>
           <p className="text-lg md:text-xl text-rascal-concrete/80 max-w-2xl mx-auto">
-            Más que ropa. Es una declaración.
+            No es moda. Es uniforme de batalla.
           </p>
         </motion.div>
 

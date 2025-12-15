@@ -1,5 +1,7 @@
 import { Hero } from "@/components/sections/Hero";
 import { Manifesto } from "@/components/sections/Manifesto";
+import { Values } from "@/components/sections/Values";
+import { WordsWorks } from "@/components/sections/WordsWorks";
 import { ProductShowcase } from "@/components/sections/ProductShowcase";
 import { Rascalitos } from "@/components/sections/Rascalitos";
 import { Lifestyle } from "@/components/sections/Lifestyle";
@@ -10,6 +12,8 @@ export default function Home() {
     <main>
       <Hero />
       <Manifesto />
+      <Values />
+      <WordsWorks />
       <ProductShowcase />
       <Rascalitos />
       <Lifestyle />

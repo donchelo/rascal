@@ -2,6 +2,7 @@
 
 import { Heading } from "@/components/ui/Heading";
 import { MonoText } from "@/components/ui/MonoText";
+import { StatusBadge } from "@/components/ui/StatusBadge";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -32,6 +33,9 @@ export function Manifesto() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
+          <div className="mb-4 flex justify-center">
+             <StatusBadge code="00.05" label="PROPÓSITO" />
+          </div>
           <Heading as="h2" size="lg" className="mb-4">
             El Manifiesto
           </Heading>

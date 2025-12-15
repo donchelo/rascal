@@ -23,10 +23,10 @@ export function Contact() {
           transition={{ duration: 0.6 }}
         >
           <Heading as="h2" size="lg" className="mb-8 text-rascal-cream">
-            ¿Listo para surfear la ciudad?
+            ¿Te subes o te quedas?
           </Heading>
           <p className="text-lg md:text-xl text-rascal-cream/80 mb-12 max-w-2xl mx-auto">
-            Contáctanos y descubre cómo RASCAL puede cambiar tu forma de moverte.
+            No explicamos. Rodamos. Si tienes dudas, pregunta. Si quieres una, escribe.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -37,7 +37,7 @@ export function Contact() {
               className="bg-rascal-black/50 p-6 rounded-lg"
             >
               <Heading as="h3" size="sm" className="mb-4 text-rascal-red">
-                Teléfono
+                Señal
               </Heading>
               <MonoText>
                 <a
@@ -56,7 +56,7 @@ export function Contact() {
               className="bg-rascal-black/50 p-6 rounded-lg"
             >
               <Heading as="h3" size="sm" className="mb-4 text-rascal-red">
-                Email
+                Frecuencia
               </Heading>
               <MonoText>
                 <a

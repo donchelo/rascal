@@ -3,6 +3,7 @@
 import { Heading } from "@/components/ui/Heading";
 import { RascalButton } from "@/components/ui/RascalButton";
 import { Marquee } from "@/components/ui/Marquee";
+import { StatusBadge } from "@/components/ui/StatusBadge";
 import Image from "next/image";
 
 export function Hero() {
@@ -11,7 +12,7 @@ export function Hero() {
       {/* Background Image (opcional) */}
       <div className="absolute inset-0 z-0 opacity-20">
         <Image
-          src="/images/lifestyle/hero-bg.jpg"
+          src="/images/lifestyle/hero-bg.jpeg"
           alt=""
           fill
           className="object-cover"
@@ -33,6 +34,9 @@ export function Hero() {
 
       {/* Main Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div className="mb-6 flex justify-center">
+           <StatusBadge code="00.01" label="BENEFICIO FUNCIONAL" dark />
+        </div>
         <Heading
           as="h1"
           size="xl"
@@ -43,8 +47,10 @@ export function Hero() {
           BURN RULES.
         </Heading>
 
-        <p className="text-lg md:text-xl lg:text-2xl mb-8 md:mb-12 max-w-2xl mx-auto text-rascal-cream/90">
-          Surfear la ciudad. La bicicleta eléctrica que rompe las reglas.
+        <p className="text-lg md:text-xl lg:text-2xl mb-8 md:mb-12 max-w-2xl mx-auto text-rascal-cream/90 font-medium">
+          No vendemos movilidad, vendemos libertad. Diseño afilado, potencia callejera y cero excusas para quedarte quieto.
+          <br className="hidden md:block" />
+          <span className="block mt-2 text-rascal-cream/80">No te llevamos del punto A al B: te llevamos contra la corriente.</span>
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -55,7 +61,7 @@ export function Hero() {
               document.getElementById("bikes")?.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            Ver las Bikes
+            LA MÁQUINA
           </RascalButton>
           <RascalButton
             variant="outline"
