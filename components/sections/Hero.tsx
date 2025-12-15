@@ -4,23 +4,19 @@ import { Heading } from "@/components/ui/Heading";
 import { RascalButton } from "@/components/ui/RascalButton";
 import { Marquee } from "@/components/ui/Marquee";
 import { StatusBadge } from "@/components/ui/StatusBadge";
-import Image from "next/image";
+import { BackgroundSlider } from "@/components/ui/BackgroundSlider";
 
 export function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col justify-center items-center bg-rascal-black text-rascal-cream overflow-hidden">
       {/* Background Image (opcional) */}
       <div className="absolute inset-0 z-0 opacity-40">
-        <Image
-          src="/images/lifestyle/hero-bg.jpeg"
-          alt=""
-          fill
-          className="object-cover"
-          sizes="100vw"
-          priority
-          onError={(e) => {
-            (e.target as HTMLImageElement).style.display = "none";
-          }}
+        <BackgroundSlider 
+          images={[
+            "/images/hero/hero-1.jpeg",
+            "/images/hero/hero-2.jpeg",
+            "/images/hero/hero-3.jpeg"
+          ]}
         />
       </div>
       {/* Background Marquee */}
