@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  /* Rascal Brand Colors */
+  --rascal-red: #B84233;
+  --rascal-black: #000000;
+  --rascal-cream: #F5F5F0;
+  --rascal-concrete: #333333;
+  
+  /* Base Colors */
+  --background: var(--rascal-cream);
+  --foreground: var(--rascal-black);
+}
+
+@theme inline {
+  /* Colors */
+  --color-rascal-red: var(--rascal-red);
+  --color-rascal-black: var(--rascal-black);
+  --color-rascal-cream: var(--rascal-cream);
+  --color-rascal-concrete: var(--rascal-concrete);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  /* Typography */
+  --font-sans: var(--font-core-sans);
+  --font-mono: var(--font-silka-mono);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-core-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
