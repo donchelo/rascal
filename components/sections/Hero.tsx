@@ -10,7 +10,7 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col justify-center items-center bg-rascal-black text-rascal-cream overflow-hidden">
       {/* Background Image (opcional) */}
-      <div className="absolute inset-0 z-0 opacity-20">
+      <div className="absolute inset-0 z-0 opacity-40">
         <Image
           src="/images/lifestyle/hero-bg.jpeg"
           alt=""
