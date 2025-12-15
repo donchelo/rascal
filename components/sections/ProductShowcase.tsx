@@ -26,19 +26,19 @@ export function ProductShowcase() {
     <section
       id="bikes"
       ref={ref}
-      className="py-24 md:py-32 lg:py-40 bg-rascal-black text-rascal-cream relative"
+      className="section-padding-large bg-rascal-black text-rascal-cream relative"
     >
       {/* Grid Lines Background */}
       <div className="absolute inset-0 pointer-events-none opacity-10" 
            style={{ backgroundImage: 'linear-gradient(to right, #333 1px, transparent 1px), linear-gradient(to bottom, #333 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container-standard relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.6 }}
-          className="mb-16 border-b-2 border-rascal-cream/20 pb-8"
+          className="mb-12 md:mb-16 border-b-2 border-rascal-cream/20 pb-6 md:pb-8"
         >
           <div className="flex justify-between items-end mb-4">
              <StatusBadge code="00.04" label="PRODUCT SPECIFICATION" dark />
@@ -50,7 +50,7 @@ export function ProductShowcase() {
           </Heading>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
           {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -89,9 +89,9 @@ export function ProductShowcase() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex flex-col h-full"
           >
-            <div className="border-2 border-rascal-cream/20 mb-8 bg-rascal-black">
-              <div className="border-b-2 border-rascal-cream/20 p-4 bg-rascal-cream/5">
-                <MonoText className="font-bold">TECHNICAL DATA</MonoText>
+            <div className="border-2 border-rascal-cream/20 mb-6 md:mb-8 bg-rascal-black">
+              <div className="border-b-2 border-rascal-cream/20 p-3 md:p-4 bg-rascal-cream/5">
+                <MonoText className="font-bold text-xs md:text-sm">TECHNICAL DATA</MonoText>
               </div>
               
               {specs.map((spec, index) => (
@@ -99,22 +99,22 @@ export function ProductShowcase() {
                   key={index}
                   className="flex border-b border-rascal-cream/20 last:border-b-0 hover:bg-rascal-cream/5 transition-colors"
                 >
-                  <div className="w-24 p-3 border-r border-rascal-cream/20 flex items-center justify-center bg-rascal-cream/5">
-                     <MonoText size="sm" className="text-rascal-cream/40">{spec.code}</MonoText>
+                  <div className="w-20 md:w-24 p-2 md:p-3 border-r border-rascal-cream/20 flex items-center justify-center bg-rascal-cream/5">
+                     <MonoText size="sm" className="text-rascal-cream/40 text-xs">{spec.code}</MonoText>
                   </div>
-                  <div className="flex-1 p-3 pl-6 border-r border-rascal-cream/20 flex items-center">
-                    <MonoText className="text-rascal-cream/80 text-sm font-bold">{spec.label}</MonoText>
+                  <div className="flex-1 p-2 md:p-3 pl-3 md:pl-6 border-r border-rascal-cream/20 flex items-center">
+                    <MonoText className="text-rascal-cream/80 text-xs md:text-sm font-bold">{spec.label}</MonoText>
                   </div>
-                  <div className="flex-1 p-3 flex items-center justify-end pr-6">
-                    <MonoText className="text-rascal-red font-bold">{spec.value}</MonoText>
+                  <div className="flex-1 p-2 md:p-3 flex items-center justify-end pr-3 md:pr-6">
+                    <MonoText className="text-rascal-red font-bold text-xs md:text-sm">{spec.value}</MonoText>
                   </div>
                 </div>
               ))}
             </div>
 
             <div className="mt-auto space-y-6">
-              <div className="border-l-4 border-rascal-red pl-6 py-2">
-                <p className="text-lg md:text-xl text-rascal-cream font-medium max-w-md">
+              <div className="border-l-4 border-rascal-red pl-4 md:pl-6 py-2">
+                <p className="text-base md:text-lg lg:text-xl text-rascal-cream font-medium max-w-md">
                   "No vendemos movilidad. Vendemos libertad en su forma más pura."
                 </p>
               </div>

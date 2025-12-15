@@ -1,13 +1,17 @@
 import { MonoText } from "@/components/ui/MonoText";
 import { Heading } from "@/components/ui/Heading";
+import { StatusBadge } from "@/components/ui/StatusBadge";
 
 export function Footer() {
   return (
-    <footer className="bg-rascal-black text-rascal-cream py-16 md:py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-rascal-black text-rascal-cream py-16 md:py-24 border-t-4 border-rascal-cream/20">
+      <div className="container-standard">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 md:gap-12 mb-12">
           {/* Brand */}
           <div>
+            <div className="mb-4">
+              <StatusBadge code="RASCAL" label="BRAND" dark />
+            </div>
             <Heading as="h3" size="sm" className="mb-4 text-rascal-cream">
               RASCAL
             </Heading>
@@ -24,7 +28,7 @@ export function Footer() {
             <MonoText className="text-rascal-cream/80 block mb-4">
               <a
                 href="#contacto"
-                className="hover:text-rascal-red transition-colors"
+                className="hover:text-rascal-red transition-colors border-b border-transparent hover:border-rascal-red"
               >
                 Contacto
               </a>
@@ -33,12 +37,15 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-rascal-cream/20 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-              <MonoText className="text-rascal-cream/60 text-sm">
-                © 2026 RASCAL E-BIKE.
-              </MonoText>
-            <MonoText className="text-rascal-cream/60 text-sm mt-4 md:mt-0">
+        <div className="border-t-2 border-rascal-cream/20 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <MonoText className="text-rascal-cream/60 text-sm">
+              © 2026 RASCAL E-BIKE.
+            </MonoText>
+            <MonoText className="text-rascal-cream/60 text-sm">
+              LOC: MEDELLÍN, COLOMBIA
+            </MonoText>
+            <MonoText className="text-rascal-cream/60 text-sm">
               www.rascal.com
             </MonoText>
           </div>

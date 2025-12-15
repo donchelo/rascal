@@ -9,10 +9,10 @@ interface HeadingProps {
 }
 
 const sizeClasses = {
-  xl: "text-6xl md:text-8xl lg:text-9xl",
-  lg: "text-4xl md:text-6xl lg:text-7xl",
-  md: "text-2xl md:text-4xl lg:text-5xl",
-  sm: "text-xl md:text-2xl lg:text-3xl",
+  xl: "text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl",
+  lg: "text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl",
+  md: "text-2xl sm:text-3xl md:text-4xl lg:text-5xl",
+  sm: "text-xl sm:text-2xl md:text-2xl lg:text-3xl",
 };
 
 export function Heading({

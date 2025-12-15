@@ -24,14 +24,14 @@ export function Manifesto() {
     <section
       id="manifesto"
       ref={ref}
-      className="py-24 md:py-32 lg:py-40 bg-rascal-cream"
+      className="section-padding-large bg-rascal-cream"
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container-standard max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
           <div className="mb-4 flex justify-center">
              <StatusBadge code="00.05" label="PROPÓSITO" />
@@ -44,7 +44,7 @@ export function Manifesto() {
           </MonoText>
         </motion.div>
 
-        <div className="space-y-8 md:space-y-12">
+        <div className="space-y-6 md:space-y-8 lg:space-y-12">
           {manifestoText.map((text, index) => (
             <motion.p
               key={index}
@@ -55,7 +55,7 @@ export function Manifesto() {
                   : { opacity: 0, x: index % 2 === 0 ? -50 : 50 }
               }
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed"
+              className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-medium leading-relaxed"
             >
               {text}
             </motion.p>
@@ -66,7 +66,7 @@ export function Manifesto() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-16 text-center"
+          className="mt-12 md:mt-16 text-center"
         >
           <Heading as="h3" size="md" className="text-rascal-red">
             RASCAL — Move fast. Burn rules.

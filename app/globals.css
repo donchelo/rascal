@@ -10,6 +10,19 @@
   /* Base Colors */
   --background: var(--rascal-cream);
   --foreground: var(--rascal-black);
+  
+  /* Spacing System - Standardized section padding */
+  --section-padding-mobile: 3rem; /* 48px / py-12 */
+  --section-padding-tablet: 6rem; /* 96px / py-24 */
+  --section-padding-desktop: 8rem; /* 128px / py-32 */
+  --section-padding-large: 10rem; /* 160px / py-40 */
+  
+  /* Container Widths */
+  --container-sm: 42rem; /* 672px / max-w-2xl */
+  --container-md: 48rem; /* 768px / max-w-3xl */
+  --container-lg: 64rem; /* 1024px / max-w-4xl */
+  --container-xl: 72rem; /* 1152px / max-w-6xl */
+  --container-2xl: 80rem; /* 1280px / max-w-7xl */
 }
 
 @theme inline {
@@ -66,4 +79,66 @@ body {
 
 .animate-marquee-fast {
   animation: marquee 20s linear infinite;
+}
+
+/* Utility Classes for Consistent Spacing */
+.section-padding {
+  padding-top: var(--section-padding-mobile);
+  padding-bottom: var(--section-padding-mobile);
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: var(--section-padding-tablet);
+    padding-bottom: var(--section-padding-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding-top: var(--section-padding-desktop);
+    padding-bottom: var(--section-padding-desktop);
+  }
+}
+
+.section-padding-large {
+  padding-top: var(--section-padding-mobile);
+  padding-bottom: var(--section-padding-mobile);
+}
+
+@media (min-width: 768px) {
+  .section-padding-large {
+    padding-top: var(--section-padding-tablet);
+    padding-bottom: var(--section-padding-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding-large {
+    padding-top: var(--section-padding-large);
+    padding-bottom: var(--section-padding-large);
+  }
+}
+
+/* Standard Container Width */
+.container-standard {
+  max-width: var(--container-2xl);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-standard {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-standard {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }

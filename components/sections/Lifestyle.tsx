@@ -22,19 +22,19 @@ export function Lifestyle() {
     <section
       id="merch"
       ref={ref}
-      className="py-24 md:py-32 lg:py-40 bg-rascal-cream"
+      className="section-padding-large bg-rascal-cream"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container-standard">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
           <Heading as="h2" size="lg" className="mb-4">
             Merch & Lifestyle
           </Heading>
-          <p className="text-lg md:text-xl text-rascal-concrete/80 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg lg:text-xl text-rascal-concrete/80 max-w-2xl mx-auto">
             No es moda. Es uniforme de batalla.
           </p>
         </motion.div>
@@ -43,7 +43,7 @@ export function Lifestyle() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6"
         >
           {merchItems.map((item, index) => (
             <motion.div
@@ -85,7 +85,7 @@ export function Lifestyle() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="mt-16 text-center"
+          className="mt-12 md:mt-16 text-center"
         >
           <MonoText className="text-rascal-concrete/60">
             Próximamente disponible

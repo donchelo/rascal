@@ -17,11 +17,11 @@ export function WordsWorks() {
   const repeatedWords = Array(4).fill(words).flat().join(" — ");
 
   return (
-    <section className="py-12 bg-rascal-red text-rascal-cream border-y-4 border-rascal-black overflow-hidden">
+    <section className="py-8 md:py-12 bg-rascal-red text-rascal-cream border-y-4 border-rascal-black overflow-hidden">
         <Marquee
           text={repeatedWords}
           speed="normal"
-          className="text-4xl md:text-6xl font-bold uppercase"
+          className="text-2xl md:text-4xl lg:text-6xl font-bold uppercase"
         />
     </section>
   );
