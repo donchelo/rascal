@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { MonoText } from "@/components/ui/MonoText";
+import { motion, AnimatePresence } from "framer-motion";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -82,34 +83,51 @@ export function Navbar() {
         </div>
 
         {/* Mobile Menu */}
-        <div
-          className={cn(
-            "md:hidden overflow-hidden transition-all duration-300 border-t-2 border-rascal-black bg-rascal-cream",
-            isOpen ? "max-h-80" : "max-h-0"
-          )}
-        >
-          <div className="flex flex-col divide-y-2 divide-rascal-black">
-            {["Bikes", "Merch"].map((item) => (
-              <Link
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                onClick={() => setIsOpen(false)}
-                className="px-4 py-3 text-sm font-bold uppercase tracking-wider hover:bg-rascal-red hover:text-rascal-cream transition-colors flex justify-between group"
-              >
-                <span>{item}</span>
-                <span className="font-mono text-xs opacity-0 group-hover:opacity-100">{'->'}</span>
-              </Link>
-            ))}
-            <Link
-              href="#contacto"
-              onClick={() => setIsOpen(false)}
-              className="px-4 py-3 text-sm font-bold uppercase tracking-wider bg-rascal-red text-rascal-cream flex justify-between group border-2 border-rascal-red"
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ maxHeight: 0, opacity: 0 }}
+              animate={{ maxHeight: 320, opacity: 1 }}
+              exit={{ maxHeight: 0, opacity: 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="md:hidden overflow-hidden border-t-2 border-rascal-black bg-rascal-cream"
             >
-              <span>Contact</span>
-              <span className="font-mono text-xs opacity-0 group-hover:opacity-100">{'->'}</span>
-            </Link>
-          </div>
-        </div>
+              <div className="flex flex-col divide-y-2 divide-rascal-black">
+                {["Bikes", "Merch"].map((item, index) => (
+                  <motion.div
+                    key={item}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: index * 0.1 }}
+                  >
+                    <Link
+                      href={`#${item.toLowerCase()}`}
+                      onClick={() => setIsOpen(false)}
+                      className="px-4 py-3 text-sm font-bold uppercase tracking-wider hover:bg-rascal-red hover:text-rascal-cream transition-colors flex justify-between group"
+                    >
+                      <span>{item}</span>
+                      <span className="font-mono text-xs opacity-0 group-hover:opacity-100">{'->'}</span>
+                    </Link>
+                  </motion.div>
+                ))}
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.3, delay: 0.2 }}
+                >
+                  <Link
+                    href="#contacto"
+                    onClick={() => setIsOpen(false)}
+                    className="px-4 py-3 text-sm font-bold uppercase tracking-wider bg-rascal-red text-rascal-cream flex justify-between group border-2 border-rascal-red"
+                  >
+                    <span>Contact</span>
+                    <span className="font-mono text-xs opacity-0 group-hover:opacity-100">{'->'}</span>
+                  </Link>
+                </motion.div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </nav>
   );

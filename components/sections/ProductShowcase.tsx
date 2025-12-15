@@ -90,8 +90,8 @@ export function ProductShowcase() {
             className="flex flex-col h-full"
           >
             <div className="border-2 border-rascal-cream/20 mb-6 md:mb-8 bg-rascal-black">
-              <div className="border-b-2 border-rascal-cream/20 p-3 md:p-4 bg-rascal-cream/5">
-                <MonoText className="font-bold text-xs md:text-sm">TECHNICAL DATA</MonoText>
+              <div className="border-b-2 border-rascal-cream/20 p-4 sm:p-3 md:p-4 bg-rascal-cream/5">
+                <MonoText className="font-bold text-sm sm:text-xs md:text-sm">TECHNICAL DATA</MonoText>
               </div>
               
               {specs.map((spec, index) => (
@@ -99,14 +99,14 @@ export function ProductShowcase() {
                   key={index}
                   className="flex border-b border-rascal-cream/20 last:border-b-0 hover:bg-rascal-cream/5 transition-colors"
                 >
-                  <div className="w-20 md:w-24 p-2 md:p-3 border-r border-rascal-cream/20 flex items-center justify-center bg-rascal-cream/5">
-                     <MonoText size="sm" className="text-rascal-cream/40 text-xs">{spec.code}</MonoText>
+                  <div className="w-16 sm:w-20 md:w-24 p-3 sm:p-2.5 md:p-3 border-r border-rascal-cream/20 flex items-center justify-center bg-rascal-cream/5">
+                     <MonoText size="sm" className="text-rascal-cream/40 text-[10px] sm:text-xs">{spec.code}</MonoText>
                   </div>
-                  <div className="flex-1 p-2 md:p-3 pl-3 md:pl-6 border-r border-rascal-cream/20 flex items-center">
-                    <MonoText className="text-rascal-cream/80 text-xs md:text-sm font-bold">{spec.label}</MonoText>
+                  <div className="flex-1 p-3 sm:p-2.5 md:p-3 pl-4 sm:pl-3 md:pl-6 border-r border-rascal-cream/20 flex items-center">
+                    <MonoText className="text-rascal-cream/80 text-sm sm:text-xs md:text-sm font-bold leading-tight">{spec.label}</MonoText>
                   </div>
-                  <div className="flex-1 p-2 md:p-3 flex items-center justify-end pr-3 md:pr-6">
-                    <MonoText className="text-rascal-red font-bold text-xs md:text-sm">{spec.value}</MonoText>
+                  <div className="flex-1 p-3 sm:p-2.5 md:p-3 flex items-center justify-end pr-4 sm:pr-3 md:pr-6">
+                    <MonoText className="text-rascal-red font-bold text-sm sm:text-xs md:text-sm">{spec.value}</MonoText>
                   </div>
                 </div>
               ))}

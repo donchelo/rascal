@@ -24,11 +24,11 @@ export function Hero() {
         />
       </div>
       {/* Background Marquee */}
-      <div className="absolute top-0 left-0 right-0 z-0 hidden md:block">
+      <div className="absolute top-0 left-0 right-0 z-0">
         <Marquee
           text="MOVE FAST. BURN RULES."
           speed="slow"
-          className="text-4xl md:text-6xl lg:text-8xl font-bold opacity-10"
+          className="text-2xl sm:text-3xl md:text-6xl lg:text-8xl font-bold opacity-10"
         />
       </div>
 

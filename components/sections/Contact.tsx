@@ -30,20 +30,20 @@ export function Contact() {
           className="border-4 border-rascal-cream bg-rascal-black/50 relative"
         >
           {/* Cabecera del Panel - Status Strip */}
-          <div className="border-b-4 border-rascal-cream bg-rascal-black/70 p-3 md:p-4 flex items-center justify-between flex-wrap gap-3 md:gap-4">
-            <div className="flex items-center gap-3 flex-wrap">
+          <div className="border-b-4 border-rascal-cream bg-rascal-black/70 p-3 sm:p-3.5 md:p-4 flex items-center justify-between flex-wrap gap-2 sm:gap-3 md:gap-4">
+            <div className="flex items-center gap-2 sm:gap-3 flex-wrap min-w-0 flex-1">
               <StatusBadge code="RASCAL" label="COMM_LINK" dark={true} />
-              <MonoText size="sm" className="text-rascal-cream/60">
+              <MonoText size="sm" className="text-rascal-cream/60 text-xs sm:text-sm whitespace-nowrap">
                 COMMUNICATION ARRAY
               </MonoText>
             </div>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
               <StatusBadge code="STATUS" label="LIVE" dark={true} />
               {/* Indicador de estado animado */}
               <motion.div
                 animate={{ opacity: [1, 0.3, 1] }}
                 transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
-                className="w-3 h-3 bg-rascal-red border-2 border-rascal-cream"
+                className="w-3 h-3 bg-rascal-red border-2 border-rascal-cream flex-shrink-0"
               />
             </div>
           </div>
@@ -154,12 +154,12 @@ export function Contact() {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.4, delay: 0.6, ease: "linear" }}
-            className="border-t-4 border-rascal-cream bg-rascal-black/70 p-3 md:p-4 flex items-center justify-between flex-wrap gap-3 md:gap-4"
+            className="border-t-4 border-rascal-cream bg-rascal-black/70 p-3 sm:p-3.5 md:p-4 flex items-center justify-between flex-wrap gap-2 sm:gap-3 md:gap-4"
           >
-            <MonoText size="sm" className="text-rascal-cream/80">
+            <MonoText size="sm" className="text-rascal-cream/80 text-xs sm:text-sm">
               LOC: MEDELLÍN, COLOMBIA // SECTOR 4
             </MonoText>
-            <MonoText size="sm" className="text-rascal-cream/60">
+            <MonoText size="sm" className="text-rascal-cream/60 text-xs sm:text-sm">
               SN: RSCL-2024-001
             </MonoText>
           </motion.div>
