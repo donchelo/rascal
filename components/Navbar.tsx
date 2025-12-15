@@ -37,7 +37,7 @@ export function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
-            {["Bikes", "Rascalitos", "Merch", "Contacto"].map((item) => (
+            {["Bikes", "Merch", "Contacto"].map((item) => (
               <Link
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -51,7 +51,7 @@ export function Navbar() {
             ))}
             
             <div className="ml-4 pl-4 border-l-2 border-rascal-black h-8 flex items-center">
-               <MonoText size="sm" className="text-rascal-red font-bold">EST. 2025</MonoText>
+               <MonoText size="sm" className="text-rascal-red font-bold">EST. 2022</MonoText>
             </div>
           </div>
 
@@ -77,7 +77,7 @@ export function Navbar() {
           )}
         >
           <div className="flex flex-col divide-y-2 divide-rascal-black">
-            {["Bikes", "Rascalitos", "Merch", "Contacto"].map((item) => (
+            {["Bikes", "Merch", "Contacto"].map((item) => (
               <Link
                 key={item}
                 href={`#${item.toLowerCase()}`}

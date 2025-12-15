@@ -12,10 +12,10 @@ export function Lifestyle() {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const merchItems = [
-    { name: "Hoodies", desc: "Script Bordado.", image: "hoodie.jpg" },
-    { name: "Camisetas", desc: "Velocidad Gráfica.", image: "t-shirt.jpg" },
-    { name: "Gorras", desc: "Two-tone. Sin grises.", image: "cap.jpg" },
-    { name: "Medias", desc: "Trouble. Maker.", image: "socks.jpg" },
+    { name: "Hoodies", desc: "Script Bordado.", image: "hoodie.jpeg" },
+    { name: "Camisetas", desc: "Velocidad Gráfica.", image: "t-shirt.jpeg" },
+    { name: "Gorras", desc: "Two-tone. Sin grises.", image: "cap.jpeg" },
+    { name: "Medias", desc: "Trouble. Maker.", image: "socks.jpeg" },
   ];
 
   return (

@@ -24,7 +24,7 @@ export function Footer() {
             <div className="space-y-2">
               <MonoText className="text-rascal-cream/80 block">
                 <a
-                  href="tel:+573126546102"
+                  href="tel:+573128994005"
                   className="hover:text-rascal-red transition-colors"
                 >
                   +57 312 654 6102
@@ -40,7 +40,7 @@ export function Footer() {
               </MonoText>
               <MonoText className="text-rascal-cream/80 block">
                 <a
-                  href="#contact"
+                  href="#contacto"
                   className="hover:text-rascal-red transition-colors"
                 >
                   Más información
@@ -67,7 +67,7 @@ export function Footer() {
         <div className="border-t border-rascal-cream/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
               <MonoText className="text-rascal-cream/60 text-sm">
-                © 2025 RASCAL E-BIKE.
+                © 2022 RASCAL E-BIKE.
               </MonoText>
             <MonoText className="text-rascal-cream/60 text-sm mt-4 md:mt-0">
               www.rascal.com

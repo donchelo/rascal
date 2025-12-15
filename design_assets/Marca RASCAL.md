@@ -54,8 +54,7 @@ RASCAL no es una marca que quieras alcanzar. Es una marca que te impulsa a mover
 
 ## Arquitectura de Marca
 
-**RASCAL** — Marca principal (adultos)
-**Rascalitos** — Submarca infantil (cascos, balance bikes, merchandising kids)
+**RASCAL** — Marca principal
 
 ---
 
@@ -110,14 +109,12 @@ Rebelde con propósito. Directo. Provocador pero no agresivo. Joven pero no inma
 
 ### Producto
 - E-bikes (fat tire, diseño minimalista negro)
-- Balance bikes infantiles (Rascalitos)
 
 ### Merchandising
 - Hoodies con logo script bordado
 - Camisetas con isotipo + líneas de velocidad
 - Gorras two-tone (crema/rojo)
 - Medias "Trouble" / "Maker"
-- Cascos multicolor (línea Rascalitos)
 
 ### Digital
 - App "Troublemaker Route" — rutas con retos diarios
@@ -149,7 +146,7 @@ Rebelde con propósito. Directo. Provocador pero no agresivo. Joven pero no inma
 ## Información de Contacto
 
 **Ciudad:** Medellín, Colombia
-**Teléfono:** +57 312 654 6102
+**Teléfono:** +57 312 899 4005
 **Email:** info@rascal.com
 **Website:** www.rascal.com
 

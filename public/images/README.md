@@ -6,7 +6,6 @@
 images/
 ├── product/          ← Fotos de la e-bike
 ├── lifestyle/        ← Fotos urbanas, personas en movimiento
-├── rascalitos/       ← Fotos de productos infantiles
 └── merch/            ← Fotos de merchandising
 ```
 
@@ -25,19 +24,6 @@ images/
 - Formato: JPG, WebP
 - Descripción: Imagen de fondo para el Hero (opcional, si no existe se usa fondo negro)
 - Uso: Background del Hero Section
-
-### 👶 `/rascalitos/`
-**balance-bike.jpg** (Opcional)
-- Tamaño recomendado: 800x600px
-- Descripción: Foto de balance bike infantil
-
-**helmet-kids.jpg** (Opcional)
-- Tamaño recomendado: 800x600px
-- Descripción: Foto de cascos multicolor para niños
-
-**merch-kids.jpg** (Opcional)
-- Tamaño recomendado: 800x600px
-- Descripción: Foto de merchandising infantil
 
 ### 👕 `/merch/`
 **hoodie.jpg** (Opcional)

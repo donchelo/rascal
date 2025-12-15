@@ -12,7 +12,7 @@ export function Contact() {
 
   return (
     <section
-      id="contact"
+      id="contacto"
       ref={ref}
       className="py-24 md:py-32 lg:py-40 bg-rascal-concrete text-rascal-cream"
     >
@@ -41,7 +41,7 @@ export function Contact() {
               </Heading>
               <MonoText>
                 <a
-                  href="tel:+573126546102"
+                  href="tel:+573128994005"
                   className="hover:text-rascal-red transition-colors"
                 >
                   +57 312 654 6102
