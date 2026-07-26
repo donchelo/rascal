@@ -115,7 +115,7 @@ export function ProductShowcase() {
             <div className="mt-auto space-y-6">
               <div className="border-l-4 border-rascal-red pl-4 md:pl-6 py-2">
                 <p className="text-base md:text-lg lg:text-xl text-rascal-cream font-medium max-w-md">
-                  "No vendemos movilidad. Vendemos libertad en su forma más pura."
+                  &quot;No vendemos movilidad. Vendemos libertad en su forma más pura.&quot;
                 </p>
               </div>
               <RascalButton
